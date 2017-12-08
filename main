@@ -1,14 +1,4 @@
 from random import randint
-def hang_man(): #creating function 
-     guess = input("Enter a guess based on the clues. You can use spaces but keep everthing lowercase. ")
-     attempts = 3
-     if guess != word:
-        while attempts != 0:
-            print("Sorry, try again! You have " + str(attempts) + " left.")
-            guess = input("Enter a guess based on the given clues. You can use spaces but keep everything lowercase. ")
-            attempts -= 1
-        else:
-            return "you good"
         
 ye_ne = input("Do you want to play?Enter ye or ne: ")
 if ye_ne == "ne":
@@ -27,9 +17,16 @@ elif ye_ne == "ye":
     end_val = num_letters - 1
     print letters[1:end_val]
     
-    break 
-    hang_man()
-   
+     guess = input("Enter a guess based on the clues. You can use spaces but keep everthing lowercase. ")
+     attempts = 3
+     if guess != word:
+        while attempts != 0:
+            print("Sorry, try again! You have " + str(attempts) + " left.")
+            guess = input("Enter a guess based on the given clues. You can use spaces but keep everything lowercase. ")
+            attempts -= 1
+     else:
+          return "you good"
+    
 else:
     print("you stupid")
 
