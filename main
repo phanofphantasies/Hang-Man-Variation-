@@ -1,0 +1,15 @@
+from random import randint
+key_words = ["cool beans", "groovy  noodles", "basic", "spicy boi", "yolo","dank"]
+x = len(key_words) -1 #choosing a word from the list
+word = key_words[x] #word
+
+print("Try to guess the phrase/word")
+num_letters = len(word)  #lenth of word
+print "# of Letters: " + str(num_letters) #listing length of word
+
+letters = [list(word)] #splitting into array
+loop_val = num_letters - 1
+while num_letters != 0:
+    print letters[3:loop_val]
+    num_letters -= 1
+   
