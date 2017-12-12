@@ -11,22 +11,21 @@ elif ye_ne == "ye":
 
     print("Try to guess the phrase/word")
     num_letters = len(word) #length of word
-    print "# of Letters: " + str(num_letters) #listing length of word
+    print("# of Letters: " + str(num_letters)) #listing length of word
 
     letters = list(word) #splitting word into array
     end_val = num_letters - 1
-    print letters[1:end_val]
+    print(letters[1:end_val])
     
-     guess = input("Enter a guess based on the clues. You can use spaces but keep everthing lowercase. ")
-     attempts = 3
-     if guess != word:
+    guess = input("Enter a guess based on the clues. You can use spaces but keep everthing lowercase. ")
+    attempts = 3
+    if guess != word:
         while attempts != 0:
             print("Sorry, try again! You have " + str(attempts) + " left.")
             guess = input("Enter a guess based on the given clues. You can use spaces but keep everything lowercase. ")
             attempts -= 1
-     else:
-          return "you good"
+    else:
+          print("you good")
     
 else:
     print("you stupid")
-
